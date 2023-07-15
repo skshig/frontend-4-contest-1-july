@@ -27,6 +27,10 @@ img{
     margin: 20px;
 }
 
+h2{
+    margin-left: 786px;
+}
+
 input{
     border-bottom: 1px solid grey;
     border-top: none;

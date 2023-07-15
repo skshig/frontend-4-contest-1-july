@@ -35,7 +35,7 @@ function formSubmit(event){
 }
     else {
         setSuccessMessage("Form Submitted Successfully!")
-        
+
     }
 }
     return (
@@ -55,27 +55,27 @@ function formSubmit(event){
                     </div>
                 <main className="form-fields">
                     <div className="inputs">
-                        <div className="name"><label htmlFor="name"></label><br/>
-                        <input type="text" name="name" placeholder='Full Name' onChange={(event)=>setName(event.target.value)} />
+                        <div className="name"><label htmlFor="name">Full Name</label><br/>
+                        <input type="text" name="name"  onChange={(event)=>setName(event.target.value)} />
                     </div>
 
-                        <div className="email"><label htmlFor="email"></label><br/>
-                        <input type="email" name="email" placeholder='Email' onChange={(event)=>setEmail(event.target.value)} />
+                        <div className="email"><label htmlFor="email">Email</label><br/>
+                        <input type="email" name="email"  onChange={(event)=>setEmail(event.target.value)} />
                     </div>
 
                         <div className="password">
-                           <div className="password"><label htmlFor="password"></label><br/>
-                            <input type="password" name="password" placeholder='Password' onChange={(event)=>setPassword(event.target.value)} />
+                           <div className="password"><label htmlFor="password">Password</label><br/>
+                            <input type="password" name="password"  onChange={(event)=>setPassword(event.target.value)} />
                         </div>
 
-                        <div className="confirm-password"><label htmlFor="confirm-password"></label><br/>
-                            <input type="password" name="confirm-password" placeholder='Confirm Password' onChange={(event)=>setconfirmPassword(event.target.value)}  />
+                        <div className="confirm-password"><label htmlFor="confirm-password">Confirm Password</label><br/>
+                            <input type="password" name="confirm-password"  onChange={(event)=>setconfirmPassword(event.target.value)}  />
                         </div>
-                        </div>
-                   
+
+                    </div>
                     <div className="signup-button">
                         <label htmlFor="signup"></label>
-                        <button type="submit" name="signup" value="Signup" onClick={formSubmit} >Create Account</button>
+                        <button type="submit" name="signup" value="Signup" onClick={formSubmit} >Create Account-</button>
                     </div>
                     </div>
                 </main>
@@ -83,11 +83,11 @@ function formSubmit(event){
 
             {
             error && 
-                <p>{error}</p>
+                <h2>{error}</h2>
                 }
             {
                 !error && 
-                <p>{successMessage}</p>
+                <h2>{successMessage}</h2>
             }
             </div>
     )
