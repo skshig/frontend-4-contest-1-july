@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signup-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+}
+.signup-form .pic{
+    background-color: lightblue;
+    width: 550px;
+   height: 100vh;
+   border-radius: 10px;
+}
+img{
+    margin-top: 12rem;
+    height: 500px;
+    width: 400px;
+    margin-left: 10rem;
+    transform: rotate(-5deg);
+}
+
+.signup-form .complete-form{
+    margin: 20px;
+}
+
+input{
+    border-bottom: 1px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+}
+.signup-form .complete-form .signup-with{
+    display: flex;
+}
+h3{
+    margin: 10px;
+    border: 1px solid grey;
+}
+
+button{
+    margin-top:20px ;
+    width: 400px;
+    height: 32px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+}
